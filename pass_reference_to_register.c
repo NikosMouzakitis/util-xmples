@@ -7,5 +7,13 @@ int main(int argc, char *argv[])
 
 	asm("mov %0 , %%ebx" ::"g"(&buf));
 	//disassembling we observe %ebx containing the address of the buf.
+	
+	
+	//asm("movl %%ebx,%0":"=r"(a));
+        register unsigned long a asm("ebx");
+	/// got the register %ebx into the C variable a
+	printf("a = %x\n", a);  
+	
+	
 	return(0);
 }
