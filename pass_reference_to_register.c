@@ -1,5 +1,5 @@
 #include <_C.h>
-
+// should compile with -m 32 on 32bit machines(check it for compiling issues)
 int main(int argc, char *argv[])
 {
 	char *buf="thisistest";
