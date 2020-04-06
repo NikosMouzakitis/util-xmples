@@ -1,5 +1,6 @@
 #include <_C.h>
 #include <stdint.h>
+//read from file 2 uint32_t and reconstruct the uint64_t and print.
 
 int main(int argc, char *argv[])
 {
